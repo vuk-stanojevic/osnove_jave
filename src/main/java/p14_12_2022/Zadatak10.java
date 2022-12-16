@@ -15,6 +15,7 @@ public class Zadatak10 {
         System.out.println("Unesite broj: ");
         int broj = s.nextInt();
 
+//       ako treba da se odjednom proveri da li je deljiv i sa 2 i sa 3:
 //        if (broj % 2 == 0 && broj % 3 == 0) {
 //            System.out.println("Broj je deljiv i sa 2 i sa 3");
 //        } else if (broj % 2 == 0 && broj % 3 != 0) {

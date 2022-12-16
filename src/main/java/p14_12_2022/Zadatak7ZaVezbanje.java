@@ -34,5 +34,7 @@ public class Zadatak7ZaVezbanje {
 //        Broja karte koju zelis da odigras: K
 //        Potez nije validan.
 
+
+
     }
 }
