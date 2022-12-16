@@ -19,5 +19,6 @@ public class Zadatak11ZaVezbanje {
 //        Unesit akciju: smanji (objasnjenje: nakon ovoga ostaje 0)
 //        Jacina zvuka je 0.
 
+
     }
 }
