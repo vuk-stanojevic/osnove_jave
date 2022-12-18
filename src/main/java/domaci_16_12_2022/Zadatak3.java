@@ -10,13 +10,24 @@ public class Zadatak3 {
 //        Primer izvrssenja:
 //        0, 1, -2, 3, -4, 5, -6, ……..
 
-        //posto nula ne moze da ima minus, onda ona mora da se odstampa van petlje
+//       Varijanta 1:
+//         posto nula ne moze da ima minus, onda ona mora da se odstampa van petlje
+//        System.out.print("0, ");
+//
+//        for (int i = 1; i <=100; i++) {
+//            if(i%2==0){
+////                System.out.print("-" + i + ", ");
+//                System.out.print(-1*i + ", ");
+//            } else {
+//                System.out.print(i + ", ");
+//            }
+//        }
 
-        System.out.print("0, ");
 
-        for (int i = 1; i <=100; i++) {
-            if(i%2==0){
-                System.out.print("-" + i + ", ");
+//        Varijanta 2:
+        for (int i = 0; i <= 100; i++) {
+            if (i % 2 == 0) {
+                System.out.print(-1 * i + ", ");
             } else {
                 System.out.print(i + ", ");
             }
