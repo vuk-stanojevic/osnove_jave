@@ -1,5 +1,7 @@
 package p14_12_2022;
 
+import java.util.Scanner;
+
 public class Zadatak11ZaVezbanje {
     public static void main(String[] args) {
 //        (za vezbanje)
@@ -19,6 +21,33 @@ public class Zadatak11ZaVezbanje {
 //        Unesit akciju: smanji (objasnjenje: nakon ovoga ostaje 0)
 //        Jacina zvuka je 0.
 
+        Scanner s = new Scanner(System.in);
 
+        int jacina = 75;
+
+        System.out.print("Jacina zvuka je " + jacina + ". ");
+
+        for (int i = 1; i <=5 ; i++) {
+
+            System.out.print("Unesite akciju (pojacaj, smanji, mute): ");
+            String unos = s.next();
+
+            if (unos.equals("pojacaj")) {
+                jacina = jacina + 10;
+            } else if (unos.equals("smanji")) {
+                jacina = jacina - 10;
+            } else if (unos.equals("mute")) {
+                jacina = 0;
+            } else {
+                System.out.println("Nepoznata akcija");
+            }
+            if (jacina < 0) {
+                jacina = 0;
+            } else if (jacina > 100) {
+                jacina = 100;
+            }
+        }
+
+        System.out.println("Nova jacina zvuka je " + jacina);
     }
 }
