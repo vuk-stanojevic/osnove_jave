@@ -37,9 +37,57 @@ public class Zadatak6ZaVezbanje {
 //        Unesite d: 15
 //        String p ime vrednost = -7 -2 -11 # 15
 
-//        podrazumevam da je 0 pozitivna
+        Scanner s = new Scanner(System.in);
 
+        String p = " # ";
 
+        //varijanta sa petljom, "broj" umesto a/b/c/d:
+//        for (int i = 1; i <= 4; i++) {
+//            System.out.print("Unesite broj: ");
+//            int unos = s.nextInt();
+//            if (unos < 0) {
+//                p = unos + " " + p;
+//            } else {
+//                p = p + " " + unos;
+//            }
+//        }
+//
+//        System.out.println(p);
+
+        //varijantat bez petlje, sa a/b/c/d:
+        System.out.print("Unesite a: ");
+        int a = s.nextInt();
+        if (a < 0) {
+            p = a + " " + p;
+        } else {
+            p = p + " " + a;
+        }
+
+        System.out.print("Unesite b: ");
+        int b = s.nextInt();
+        if (b < 0) {
+            p = b + " " + p;
+        } else {
+            p = p + " " + b;
+        }
+
+        System.out.print("Unesite c: ");
+        int c = s.nextInt();
+        if (c < 0) {
+            p = c + " " + p;
+        } else {
+            p = p + " " + c;
+        }
+
+        System.out.print("Unesite d: ");
+        int d = s.nextInt();
+        if (d < 0) {
+            p = d + " " + p;
+        } else {
+            p = p + " " + d;
+        }
+
+        System.out.println(p);
 
     }
 }
