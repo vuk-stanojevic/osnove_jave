@@ -1,5 +1,7 @@
 package p14_12_2022;
 
+import java.util.Scanner;
+
 public class Zadatak7ZaVezbanje {
     public static void main(String[] args) {
 
@@ -34,8 +36,24 @@ public class Zadatak7ZaVezbanje {
 //        Broja karte koju zelis da odigras: K
 //        Potez nije validan.
 
+        Scanner s = new Scanner(System.in);
 
+        System.out.print("Znak karte na stolu (srce, kocka, list, detelina): ");
+        String stoZnak = s.next();
 
+        System.out.print("Broj karte na stolu (2,3,4,5,6,7,8,9,10,A,J,Q,K): ");
+        String stoBroj = s.next();
 
+        System.out.print("Znak karte koju zelite da odigrate (srce, kocka, list, detelina): ");
+        String igraZnak = s.next();
+
+        System.out.print("Broj karte koju zelite da odigrate (2,3,4,5,6,7,8,9,10,A,J,Q,K): ");
+        String igraBroj = s.next();
+
+        if (stoZnak.equals(igraZnak) || stoBroj.equals(igraBroj)) {
+            System.out.println("Potez je validan.");
+        } else {
+            System.out.println("Potez nije validan.");
+        }
     }
 }
