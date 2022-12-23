@@ -15,26 +15,13 @@ public class ZadatakPetocifreniStampa {
         System.out.print("Unesite petocifreni broj: ");
         int broj = s.nextInt();
 
-        String stampa = "";
-        int cifra = 0;
         int delilac = 10000;
 
-//        for (int i = 1; i <=5; i++) {
-//            delilac=delilac*10;
-//            cifra = (broj)/(10*i);
-//            stampa = stampa + ", " + cifra;
-//        }
-
         for (int i = 1; i<=5; i++) {
-//            delilac=delilac*10;
-            cifra = broj/delilac;
+           int cifra = broj/delilac;
             System.out.print(cifra + ", ");
             broj=broj-(cifra*delilac);
             delilac=delilac/10;
-
         }
-
-//        System.out.println(stampa);
-
     }
 }
