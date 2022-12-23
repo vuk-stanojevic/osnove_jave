@@ -46,6 +46,7 @@ public class Zadatak5ZaVezbanje {
 //        System.out.println("Niz a: " + a);
 //        System.out.println("Niz b: " + b);
 
+        //varijanta da kroz dodatne posebne for petlje stampa element po element:
         System.out.println();
         System.out.print("Niz a: ");
         for (int i = 0; i < n; i++) {
