@@ -28,17 +28,22 @@ public class Zadatak6ZaVezbanje {
         System.out.print("Unesite N: ");
         int n = s.nextInt();
 
-        for (int i = 0; i < n; i++) {
-            niz.add(i, "placeholder");
-        }
+//        for (int i = 0; i < n; i++) {
+//            niz.add(i, "placeholder");
+//        }
+//
+//        for (int i=n-1; i>=0; i--) {
+//            System.out.print("Unesite string: ");
+//            niz.set(i, s.next());
+//        }
 
-        for (int i=n-1; i>=0; i--) {
+        for (int i = 0; i < n; i++) {
             System.out.print("Unesite string: ");
-            niz.set(i, s.next());
+            niz.add(0, s.next());
         }
 
         System.out.println();
-//varijanta 1, da odstampa ceo niz odjednom, pa se to prikazuje u uglastim zagradama:
+//varijanta da odstampa ceo niz odjednom, pa se to prikazuje u uglastim zagradama:
 //        System.out.println("Niz a: " + niz);
 
 //        varijanta da kroz dodatnu for petlju stampa element po element:
