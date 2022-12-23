@@ -1,6 +1,7 @@
 package p21_12_2022;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Zadatak7ZaVezbanje {
     public static void main(String[] args) {
@@ -14,6 +15,8 @@ public class Zadatak7ZaVezbanje {
 
         ArrayList<Integer> brojevi = new ArrayList<>();
 
+        Random random = new Random();
+
         brojevi.add(17);
         brojevi.add(18);
         brojevi.add(19);
@@ -25,5 +28,13 @@ public class Zadatak7ZaVezbanje {
         brojevi.add(25);
         brojevi.add(26);
 
+        for (int i = 0; i < 8; i++) {
+            int x = random.nextInt(brojevi.size());
+            int cuvar = brojevi.get(x);
+            int y = random.nextInt(brojevi.size());
+            brojevi.set(x, brojevi.get(y));
+            brojevi.set(y, cuvar);
+            System.out.println(brojevi);
+        }
     }
 }
