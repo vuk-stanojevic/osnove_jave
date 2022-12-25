@@ -24,5 +24,13 @@ public class Zadatak10ZaVezbanje {
             broj=broj/10;
         }
         System.out.println("Novi broj je " + mirror);
+
+//      varijanta 2, gde se ne pravi string
+//        System.out.print("Novi broj je ");
+//        for (int i = 1; i <=5; i++) {
+//            int cifra = broj%10;
+//            System.out.print(cifra);
+//            broj=broj/10;
+//        }
     }
 }
