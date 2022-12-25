@@ -29,7 +29,7 @@ public class Zadatak3 {
         Scanner s = new Scanner(System.in);
 
         System.out.print("Unesite N: ");
-        double n = s.nextInt();
+        int n = s.nextInt();
 
         double agresivneReci = 0;
 
@@ -42,11 +42,7 @@ public class Zadatak3 {
             } else {
                 System.out.println(tekst + "!");
             }
-
         }
-
-       double agresivnost = (agresivneReci/n)*100;
-
-        System.out.println("Nivo agresivnosti " + agresivnost + "%");
+        System.out.println("Nivo agresivnosti " + (agresivneReci/n)*100 + "%");
     }
 }
