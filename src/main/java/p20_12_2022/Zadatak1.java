@@ -39,10 +39,8 @@ public class Zadatak1 {
             System.out.println("Greska: Broj nije u opsegu od 10 do 50.");
             System.out.println("Unesite broj: ");
             broj = s.nextInt();
-
-
-            System.out.println("Broj je validan, kraj programa.");
         }
+        System.out.println("Broj je validan, kraj programa.");
 
         }
     }
