@@ -16,14 +16,14 @@ public class Zadatak10ZaVezbanje {
         System.out.print("Unesite broj: ");
         int broj = s.nextInt();
 
-        String mirror = "";
-
-        for (int i = 0; i < 5; i++) {
-            int cifra = broj%10;
-            mirror = mirror + cifra;
-            broj=broj/10;
-        }
-        System.out.println("Novi broj je " + mirror);
+//        String mirror = "";
+//
+//        for (int i = 0; i < 5; i++) {
+//            int cifra = broj%10;
+//            mirror = mirror + cifra;
+//            broj=broj/10;
+//        }
+//        System.out.println("Novi broj je " + mirror);
 
 //      varijanta 2, gde se ne pravi string
 //        System.out.print("Novi broj je ");
@@ -32,5 +32,14 @@ public class Zadatak10ZaVezbanje {
 //            System.out.print(cifra);
 //            broj=broj/10;
 //        }
+
+        //varijanta 3, gde se pravi novi broj
+        int mirror = 0;
+
+        for (int i = 0; i < 5; i++) {
+            mirror=mirror*10+broj%10;
+            broj=broj/10;
+        }
+        System.out.println("Novi broj je " + mirror);
     }
 }
