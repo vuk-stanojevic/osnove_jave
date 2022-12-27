@@ -16,7 +16,7 @@ public class Zadatak6ZaVezbanje {
         System.out.print("Unesite broj sa najvise 10 cifara: ");
         int broj = s.nextInt();
 
-        while(broj>=0){
+        while(broj>0){
             int cifra = broj % 10;
             System.out.print(cifra + ", ");
             broj = broj/10;
