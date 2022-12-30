@@ -30,14 +30,13 @@ public class Zadatak6 {
     }
 
     public static double konverzija(double eur, String valuta) {
-        double vrednost = 0;
         if (valuta.equals("RSD")) {
-            vrednost = eur*117.5;
+            return eur*117.5;
         }else if(valuta.equals("USD")){
-            vrednost=eur*1.1;
+            return eur*1.1;
         }else if(valuta.equals("RUB")){
-            vrednost=eur*62.98;
+            return eur*62.98;
         }
-        return vrednost;
+        return eur;
     }
 }
