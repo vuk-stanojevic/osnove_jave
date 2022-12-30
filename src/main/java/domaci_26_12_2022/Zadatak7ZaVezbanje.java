@@ -10,12 +10,24 @@ public class Zadatak7ZaVezbanje {
 //
 //Napomena: Resiti bez koriscenja petlji.
 
-        izbroji(5, 10);
+        System.out.println(celihBrojevaIzmedju(5,10));
         System.out.println();
-        izbroji(-5, 1);
+        System.out.println(celihBrojevaIzmedju(-5, 1));
+        System.out.println();
+        System.out.println(celihBrojevaIzmedju(5,5));
+        System.out.println();
+        System.out.println(celihBrojevaIzmedju(10, 5));
+        System.out.println();
+        System.out.println(celihBrojevaIzmedju(1, -5));
     }
 
-    public static void izbroji(int x, int y){
-        System.out.println(y-x-1);
+    public static int celihBrojevaIzmedju(int x, int y){
+        if(y>x){
+            return y-x-1;
+        } else if(y==x){
+            return 0;
+        } else {
+            return -(y-x+1);
+        }
     }
 }
