@@ -1,9 +1,13 @@
 package domaci_16_1_2023;
 
+import java.util.ArrayList;
+
 public class Igrac extends Osoba{
     private int broj;
     private String pozicija;
     private boolean kapiten;
+
+    private ArrayList<Karton> kartoni;
 
     public Igrac() {
         super();
@@ -14,6 +18,7 @@ public class Igrac extends Osoba{
         this.broj = broj;
         this.pozicija = pozicija;
         this.kapiten = kapiten;
+        this.kartoni = new ArrayList<>();
     }
 
     public int getBroj() {
@@ -45,5 +50,34 @@ public class Igrac extends Osoba{
         System.out.println("Broj: " + this.broj);
         System.out.println("Pozicija: " + this.pozicija);
         System.out.println("Kapiten: " + this.kapiten);
+        System.out.println("Broj zutih kartona: "+ this.brojZutih());
+        System.out.println("Broj crvenih kartona: " + this.brojCrvenih());
+    }
+
+    //Zadatak 2, za vezbanje
+
+
+    public void dodajKarton(Karton karton){
+        this.kartoni.add(karton);
+    }
+
+    public int brojZutih(){
+        int counterZuti = 0;
+        for (int i = 0; i < this.kartoni.size(); i++) {
+            if(this.kartoni.get(i).getKarton().equals("zuti")){
+                counterZuti++;
+            }
+        }
+        return counterZuti;
+    }
+
+    public int brojCrvenih(){
+        int counterCrveni = 0;
+        for (int i = 0; i < this.kartoni.size(); i++) {
+            if(this.kartoni.get(i).getKarton().equals("crveni")){
+                counterCrveni++;
+            }
+        }
+        return counterCrveni;
     }
 }
