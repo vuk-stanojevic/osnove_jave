@@ -4,8 +4,8 @@ public class Trener extends Osoba{
     private int godineIskustva;
     private String tipTrenera;
 
-    public Trener(String imeIPrezime, String jmbg, int godinaRodjenja, int godineIskustva, String tipTrenera) {
-        super(imeIPrezime, jmbg, godinaRodjenja);
+    public Trener(String ime, String prezime, String jmbg, int godinaRodjenja, int godineIskustva, String tipTrenera) {
+        super(ime, prezime, jmbg, godinaRodjenja);
         this.godineIskustva = godineIskustva;
         this.tipTrenera = tipTrenera;
     }

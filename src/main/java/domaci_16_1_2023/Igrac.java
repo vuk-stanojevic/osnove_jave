@@ -9,8 +9,8 @@ public class Igrac extends Osoba{
         super();
     }
 
-    public Igrac(String imeIPrezime, String jmbg, int godinaRodjenja, int broj, String pozicija, boolean kapiten) {
-        super(imeIPrezime, jmbg, godinaRodjenja);
+    public Igrac(String ime, String prezime, String jmbg, int godinaRodjenja, int broj, String pozicija, boolean kapiten) {
+        super(ime, prezime, jmbg, godinaRodjenja);
         this.broj = broj;
         this.pozicija = pozicija;
         this.kapiten = kapiten;
