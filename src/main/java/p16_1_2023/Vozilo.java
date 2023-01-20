@@ -1,6 +1,6 @@
 package p16_01_2023;
 
-public class Vozilo {
+public abstract class Vozilo {
     protected String registracija;
     protected String marka;
     protected int brzina;
