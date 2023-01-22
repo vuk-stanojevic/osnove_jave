@@ -23,7 +23,7 @@ public class Korpa {
     }
 
     //nije bas najjasnije sta se u zadatku zapravo trazi od metode ispod i kakva ona treba da bude,
-    // pogotovu zato sto je privatna pa nije jasno ni oko prosledjivanja parametra popusta
+    // pogotovu zato sto je privatna pa nije skroz jasno ni oko prosledjivanja parametra popusta
     private double cenaSvihAmbalazaSaPopustom(double popustProcenat){
         double cenaSvihAmbalazaSaPopustom = 0;
         for (int i = 0; i < this.ambalaze.size(); i++) {
@@ -33,19 +33,20 @@ public class Korpa {
     }
 
     //racunam ukupnu cenu korpe kao zbir obicnih cena ambalaze (bez popusta)
-    public double cenaKorpe(SuperKartica superKartica){
-        double cenaKorpe = 0;
-        for (int i = 0; i < this.ambalaze.size(); i++) {
-            cenaKorpe += this.ambalaze.get(i).cena();
-        }
-        cenaKorpe -= superKartica.getPopust();
-        return cenaKorpe;
-    }
-
 //    public double cenaKorpe(SuperKartica superKartica){
 //        double cenaKorpe = 0;
-//        cenaKorpe = cenaSvihAmbalazaSaPopustom()-superKartica.getPopust();
+//        for (int i = 0; i < this.ambalaze.size(); i++) {
+//            cenaKorpe += this.ambalaze.get(i).cena();
+//        }
+//        cenaKorpe -= superKartica.getPopust();
 //        return cenaKorpe;
 //    }
+
+    // racunanje ukupne cene korpe uz koriscenje super kartica popusta i metode za pojedinacne popuste
+    public double cenaKorpe(SuperKartica superKartica, double popustProcenat){
+        double cenaKorpe = 0;
+        cenaKorpe = cenaSvihAmbalazaSaPopustom(popustProcenat)-superKartica.getPopust();
+        return cenaKorpe;
+    }
 
 }

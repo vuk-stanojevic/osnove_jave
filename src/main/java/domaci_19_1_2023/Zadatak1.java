@@ -97,12 +97,13 @@ public class Zadatak1 {
         System.out.print("Skenirana Super Kartica: ");
         kartica.stampaj();
 
-        System.out.println("Cena korpe nakon popusta sa Super Kartice: " + potrosacka.cenaKorpe(kartica));
+//        System.out.println("Cena korpe nakon popusta sa Super Kartice: " + potrosacka.cenaKorpe(kartica));
+        System.out.println("Cena korpe nakon popusta sa Super Kartice: " + potrosacka.cenaKorpe(kartica, 10));
 
         System.out.println("Zelite da vratite jedan sok od narandze? Nema problema!");
         potrosacka.izbaciAmbalazu("6666-6666");
 
-        System.out.println("Cena korpe nakon popusta sa Super Kartice: " + potrosacka.cenaKorpe(kartica));
-
+//        System.out.println("Cena korpe nakon popusta sa Super Kartice: " + potrosacka.cenaKorpe(kartica));
+        System.out.println("Cena korpe nakon popusta sa Super Kartice: " + potrosacka.cenaKorpe(kartica, 10));
     }
 }
